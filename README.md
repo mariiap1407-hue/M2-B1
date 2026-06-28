@@ -63,3 +63,4 @@ Task4D/
 ├── rapport_validation.csv      # Rapport des violations détectées par le pipeline bonus
 └── README.md                   # Ce fichier
 ```
+pipeline_corrige_bonus.py correspond à une version orientée production du pipeline. Contrairement au pipeline principal, il applique des contrôles qualité bloquants en entrée. Si des violations sont détectées, le lot est rejeté et un rapport rapport_validation.csv est généré pour permettre l’analyse et la correction des données sources.
